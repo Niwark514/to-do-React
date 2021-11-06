@@ -1,11 +1,13 @@
 import './Home.css';
-import React from "react";
+import React, {useState} from "react";
 import AddTask from "../add/AddTask";
 import ListeTasks from "../liste/ListeTasks";
 import DetailTask from "../detail/DetailTask";
 
 function Home() {
-
+    const [inputName, setInputName] = useState("");
+    const [inputDescription, setInputDescription] = useState("");
+    const [taskList, setTaskList] = useState([]);
     return (
         <div className="Home">
             <header>
@@ -14,9 +16,13 @@ function Home() {
             </header>
             <main>
 
-                <AddTask/>
+                <AddTask taskList={taskList} setTaskList={setTaskList} inputName={inputName} setInputName={setInputName} inputDescription={inputDescription} setInputDescription={setInputDescription}/>
+                <h2>Vous ajoutez la tache suivante : </h2>
+                <p>Nom : {inputName}</p>
+                <p>Description : {inputDescription}</p>
 
-                <ListeTasks/>
+
+                <ListeTasks taskList={taskList}/>
 
                 <DetailTask/>
 
