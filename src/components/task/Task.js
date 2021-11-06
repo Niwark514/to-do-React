@@ -1,16 +1,31 @@
 import './Task.css';
 import React from 'react';
 
-function Task  () {
+function Task({id, nom, description, completed}) {
     return (
-        <div className={"task"}>
-<li className={"task-item"}>
-    <p>ID d'une tache : </p>
-    <p>Nomd'une tache : </p>
-    <p>Description d'une tache :</p>
-</li>
-            <button className={"btn-check"}>Fait</button>
-            <button className={"btn-delete"}>Supprimer</button>
+        <div className={"Task"}>
+            <li className={"task-item"}>
+                <div className={"task-data"}>
+                    <small>ID :</small>
+                    <p className={"task-data-id"}>{id}</p>
+                </div>
+                <div className={"task-data"}>
+                    <small>Nom :</small>
+                    <p className={"task-data-name"}>{nom}</p>
+                </div>
+                <div className={"task-data"}>
+                    <small>Description:</small>
+                    <p className={"task-data-description"}>{description}</p>
+                </div>
+
+
+
+            </li>
+            <div className={"btn-section"}>
+                <button className={"button btn-check"}>Fait</button>
+                <button className={"button btn-delete"}>Supprimer</button>
+            </div>
+
         </div>
     );
 };

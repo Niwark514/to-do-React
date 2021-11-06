@@ -31,6 +31,7 @@ const AddTask = ({
             {
                 nom: inputName,
                 description: inputDescription,
+                completed:false,
                 id: Math.random() * 1000
             }
         ])

@@ -36,12 +36,7 @@ form {
     gap: 0.41rem;
 }
 
-.button {
-    border-radius: 5px;
-    flex-grow: 1;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
+
 
 .btn-ajouter {
     background-color: #99AAA2;

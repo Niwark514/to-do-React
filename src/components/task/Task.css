@@ -1,0 +1,57 @@
+/*Component*/
+.Task {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.task-item {
+    flex-grow: 1;
+    background-color: #CDCED1;
+    border: 2px dashed #778D83;
+    border-radius: 5px;
+    padding: 0.41rem;
+}
+
+.task-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-data p{
+    padding-left: 1rem;
+}
+
+.task-data-id {
+
+}
+
+.task-data-name {
+    font-weight: bold;
+    color: #7A5958;
+}
+
+.task-data-description {
+    background-color: #E0CFA0;
+    border-radius: 5px;
+    padding: 0.41rem;
+color: #343B41;
+}
+
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn-check {
+    background-color: #E5CB85;
+    color: #774444;
+}
+
+.btn-delete {
+    color: white;
+    background-color: #774444;
+}
