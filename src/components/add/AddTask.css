@@ -1,0 +1,49 @@
+.AddTask {
+    border: 2px solid #778D83;
+    border-radius: 5px;
+    background-color: #E0CFA0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.64rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.41rem;
+}
+
+.inputConteneur {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 0.41rem;
+}
+
+.input {
+
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    padding: 0.41rem;
+    background-color: #BBC7C1;
+}
+
+.radioConteneur {
+    display: flex;
+    align-items: center;
+    gap: 0.41rem;
+}
+
+.button {
+    border-radius: 5px;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.btn-ajouter {
+    background-color: #99AAA2;
+    color: #343B41;
+}
