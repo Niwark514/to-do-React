@@ -27,6 +27,11 @@
 
 }
 
+.task-completed {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
 .task-data-name {
     font-weight: bold;
     color: #7A5958;
@@ -49,6 +54,10 @@ color: #343B41;
 .btn-check {
     background-color: #E5CB85;
     color: #774444;
+}
+
+.btn-completed {
+    background-color: #CDCED1;
 }
 
 .btn-delete {

@@ -12,14 +12,10 @@ const AddTask = ({
 
 
     const inputNameHandler = (e) => {
-        console.log(e.target.value);
-
         setInputName(e.target.value);
     }
 
     const inputDescriptionHandler = (e) => {
-        console.log(e.target.value);
-
         setInputDescription(e.target.value);
     }
 

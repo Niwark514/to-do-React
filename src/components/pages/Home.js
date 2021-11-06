@@ -14,15 +14,21 @@ function Home() {
                 <h1>Gestionnaire de tâches</h1>
                 <p>Un gestionnaire de tâches (to-do-list)</p>
             </header>
-            <main>
+            <main className={"home-main"}>
 
                 <AddTask taskList={taskList} setTaskList={setTaskList} inputName={inputName} setInputName={setInputName} inputDescription={inputDescription} setInputDescription={setInputDescription}/>
-                <h2>Vous ajoutez la tache suivante : </h2>
-                <p>Nom : {inputName}</p>
-                <p>Description : {inputDescription}</p>
+                <div className={"preview-container"}>
+                    <h2>Vous ajoutez la tache suivante : </h2>
+                    <small>Nom :</small>
+                    <p className={"preview-data"}>{inputName}</p>
+                    <small>Description :</small>
+                    <p className={"preview-data"}>{inputDescription}</p>
+
+                </div>
 
 
-                <ListeTasks taskList={taskList}/>
+
+                <ListeTasks setTaskList={setTaskList} taskList={taskList}/>
 
                 <DetailTask/>
 
