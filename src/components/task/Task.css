@@ -23,7 +23,19 @@
     padding-left: 1rem;
 }
 
-.task-data-id {
+.low-priority {
+
+}
+
+.priority {
+
+}
+
+.average-priority {
+
+}
+
+.high-priority {
 
 }
 
@@ -44,23 +56,3 @@
 color: #343B41;
 }
 
-.btn-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.btn-check {
-    background-color: #E5CB85;
-    color: #774444;
-}
-
-.btn-completed {
-    background-color: #CDCED1;
-}
-
-.btn-delete {
-    color: white;
-    background-color: #774444;
-}

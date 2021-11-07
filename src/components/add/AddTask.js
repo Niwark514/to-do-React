@@ -6,6 +6,8 @@ const AddTask = ({
                      setInputName,
                      inputDescription,
                      setInputDescription,
+                     inputPriority,
+                     setInputPriority,
                      taskList,
                      setTaskList
                  }) => {
@@ -18,6 +20,10 @@ const AddTask = ({
     const inputDescriptionHandler = (e) => {
         setInputDescription(e.target.value);
     }
+     const inputPriorityHandler = (e) => {
+        console.log(e.target.value);
+         setInputPriority(e.target.value);
+    }
 
     const submitTodoHandler = (e) => {
         e.preventDefault();
@@ -27,6 +33,7 @@ const AddTask = ({
             {
                 nom: inputName,
                 description: inputDescription,
+                priority: inputPriority,
                 completed:false,
                 id: Math.random() * 1000
             }
@@ -47,13 +54,13 @@ const AddTask = ({
                     <label htmlFor="description">Description</label>
                     <input onChange={inputDescriptionHandler} className={"input"} type="text" id="description"                           name="description" placeholder={"Saisissez la description de votre tâche"} value={inputDescription}/>
                 </div>
-                <div className={"radioConteneur"}>
+                <div className={"radioConteneur"} onChange={inputPriorityHandler}>
                     <label htmlFor="haute">Haute</label>
-                    <input type="radio" id="haute" name="importance" value="1"/>
+                    <input type="radio" id="haute" name="importance" value="Haute"/>
                     <label htmlFor="moyenne">Moyenne</label>
-                    <input type="radio" id="moyenne" name="importance" value="2"/>
+                    <input type="radio" id="moyenne" name="importance" value="Moyenne"/>
                     <label htmlFor="basse">Basse</label>
-                    <input type="radio" id="basse" name="importance" value="3"/>
+                    <input type="radio" id="basse" name="importance" value="Basse"/>
                     <small className="message-erreur"></small>
                 </div>
                 <button onClick={submitTodoHandler} className={"button btn-ajouter"} type="submit">Ajouter</button>

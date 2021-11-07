@@ -20,13 +20,29 @@ function Task({taskList, setTaskList, task, completed}) {
 
         }))
     }
+    /*let priorityClass='';
+    const setPriorityClass = () => {
+        switch (task.priority) {
+            case 'Basse' :
+                priorityClass = 'low-priority'
+                break
+            case 'Moyenne':
+                priorityClass = 'average-priority'
+            case 'Haute':
+                priorityClass = 'high-priority'
+            default:
+                return ''
+        }
+
+
+    }*/
 
     return (
         <div className={"Task"}>
             <li className={`task-item ${task.completed ? 'task-completed': ''}`}>
                 <div className={"task-data"}>
-                    <small>ID :</small>
-                    <p className={"task-data-id"}>{task.id}</p>
+                    <small>Priorité :</small>
+                    <p className={`priority`}>{task.priority}</p>
                 </div>
                 <div className={"task-data"}>
                     <small>Nom :</small>

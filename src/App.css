@@ -11,3 +11,42 @@
   font-size: 1.25rem;
   padding: 0.41rem;
 }
+
+.btn-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-ajouter {
+  background-color: #99AAA2;
+  color: #343B41;
+}
+
+.btn-ajouter:hover {
+  background-color: #343B41;
+  color: #99AAA2;
+}
+
+.btn-check {
+  background-color: #E5CB85;
+  color: #774444;
+}
+.btn-check:hover {
+  background-color: #774444;
+  color: #E5CB85;
+}
+
+.btn-completed {
+  background-color: #CDCED1;
+}
+
+.btn-delete:hover {
+  color: white;
+  background-color: #774444;
+}
+.btn-delete {
+  color: #774444;
+  background-color:white;
+}

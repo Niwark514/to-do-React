@@ -2,16 +2,15 @@ import './TaskList.css';
 import React from "react";
 import Task from "../task/Task";
 
-function ListeTasks({taskList, setTaskList}) {
+function TaskList({taskList, setTaskList}) {
 
     return (
-        <div className="TaskList">
+        <div className={`TaskList ${taskList[0] ? '' : 'empty-list'}`}>
             <h2>Liste des tâches</h2>
             <div className="task-list-container">
                 <ul className={"task-list"}>
-
                     {taskList.map(task =>(
-                        <Task setTaskList={setTaskList} taskList={taskList} task={task} key={task.id} id={task.id} nom={task.nom} description={task.description} completed={task.completed}/>
+                        <Task setTaskList={setTaskList} taskList={taskList} task={task} key={task.id}/>
                     ))}
                 </ul>
             </div>
@@ -20,4 +19,4 @@ function ListeTasks({taskList, setTaskList}) {
     );
 }
 
-export default ListeTasks;
+export default TaskList;
